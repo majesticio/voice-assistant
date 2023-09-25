@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "voice-assistant"
+version = "0.1.0"
+description = "Jarvis personal AI assistant"
+authors = ["Germain <kraken+majesticio@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "voice_assistant"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+tts = "^0.17.4"
+pydub = "^0.25.1"
+simpleaudio = "^1.0.4"
+openai-whisper = {git = "https://github.com/openai/whisper.git"}
+hypercorn = "^0.14.4"
+quart = "^0.18.4"
+markdown2 = "^2.4.10"
+pyaudio = "^0.2.13"
+openai = "^0.28.0"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,185 @@
+.content-wrapper {
+    max-width: 800px; /* Standard screen size */
+    margin: 0 auto; /* Center the content */
+    padding: 2rem;
+}
+
+.messages-container {
+    max-width: 100%;
+    overflow-y: auto;
+    height: 70vh;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+.user-message,
+.jarvis-message {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.user-message h2,
+.jarvis-message h2 {
+    margin-bottom: 0.5rem;
+}
+
+.input-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; /* Make input form span the entire width of the content area */
+}
+
+.input-group {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center; /* Vertically align the text field and submit button */
+    margin-bottom: 1rem;
+}
+
+
+.form-label {
+    margin-right: 1rem;
+}
+
+.form-control {
+    flex: 1;
+    margin-left: 20px; /* Add thick margin to the left of the text box */
+    margin-right: 1rem;
+}
+
+.submit-button {
+    display: inline-block;
+    background-color: #69B9FF;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 20px; /* Add thick margin to the right of the submit button */
+}
+
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.submit-button:focus {
+    outline: none;
+    background-color: #0056b3;
+}
+
+
+/* Dark mode styles */
+body[data-theme="dark"] {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+body[data-theme="dark"] .user-message {
+    color: #69B9FF;
+}
+
+body[data-theme="dark"] .jarvis-message {
+    color: #adb5bd;
+}
+
+body[data-theme="dark"] .messages-container {
+    background-color: #495057;
+    border-color: #6c757d;
+}
+
+body[data-theme="dark"] .input-form .form-control {
+    background-color: #6c757d;
+    color: #f8f9fa;
+}
+
+body[data-theme="dark"] .input-form .form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.25);
+}
+
+body[data-theme="dark"] .input-form .btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+body[data-theme="dark"] .input-form .btn-primary:hover,
+body[data-theme="dark"] .input-form .btn-primary:focus {
+    background-color: #0b58da;
+    border-color: #0a53be;
+}
+
+body[data-theme="dark"] .btn-outline-secondary {
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+body[data-theme="dark"] .btn-outline-secondary:hover {
+    color: #343a40;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+body[data-theme="dark"] .btn-outline-secondary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+body[data-theme="dark"] .header {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+/* bubbles */
+.message-bubble {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    max-width: 85%;
+    word-wrap: break-word;
+}
+
+.user-message {
+    align-items: flex-end;
+    text-align: right;
+    color: #69b9ff;
+}
+
+.jarvis-message {
+    align-items: flex-start;
+    color: #555;
+}
+
+body[data-theme="dark"] .user-message {
+    color: #69b9ff;
+}
+
+body[data-theme="dark"] .assistant-message {
+    color: #ccc;
+}
+
+body[data-theme="dark"] .message-bubble {
+    background-color: #3a3b3c;
+}
+ /* fonts */
+ .typewriter {
+    font-family: 'Special Elite', cursive;
+}
