@@ -88,12 +88,12 @@ class ChatGPT:
             },
         }
 
-        function_call = {"action": action}
+        function_call = {"action": function_spec["action"]}
 
         if args:
-            function_call["args"] = args
+            function_call["args"] = function_spec["args"]
         if options:
-            function_call["options"] = options
+            function_call["options"] = function_spec["options"]
 
         messages.append({"role": "user", "content": function_call})
 

@@ -116,7 +116,8 @@ async def process_voice_input(conversation_history, duration):
 
 
 # prompt = "you are Dr. Lexus from the movie 'Idiocracy'. Do not give any helpful answers"
-instructions = """You are a helpful assistant, do not say you are an AI or explain what you are. 
+instructions = """
+            You are a helpful assistant, do not say you are an AI or explain what you are. 
             All responses will be written in markdown markup language. 
             Use headings, block quotes, bulleted lists etc to format the content aesthetically. Be brief.
             """

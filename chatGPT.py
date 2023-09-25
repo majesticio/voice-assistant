@@ -28,7 +28,7 @@ async def generate_shell_commands(prompt):
         messages=[
             {
                 "role": "system",
-                "content": "You are a helpful assistant. You will generate '$SHELL' commands based on user input. Your response should contain ONLY the command and NO explanations or extra characters.",
+                "content": "You are a helpful assistant. You will generate '$SHELL' commands based on user input. Your response should contain **ONLY** the command and **NO explanations or extra characters**.",
             },
             {"role": "user", "content": prompt},
         ],

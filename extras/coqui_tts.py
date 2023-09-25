@@ -10,9 +10,9 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 # Define the model path
 MODEL_NAME = "tts_models/en/jenny/jenny"
 
-# WAV_PATH = "sounds/jarvis.wav"
-WAV_PATH = "tts_models/en/ljspeech/fast_pitch"
-# WAV_PATH = "tts_models/en/vctk/vits"
+WAV_PATH = "sounds/jarvis.wav"
+# MODEL_NAME = "tts_models/en/ljspeech/fast_pitch"
+# MODEL_NAME = "tts_models/en/vctk/vits"
 # initialize tts model
 tts_engine = TTS(model_name=MODEL_NAME, progress_bar=False).to(device)
 
